@@ -10,7 +10,9 @@ function calories(input) {
         }
         elvesArr[i] = sum;
     }
-    return Math.max.apply(null, elvesArr);
+    elvesArr.sort(function (a, b) {return a-b});
+    let maxIndex = elvesArr.length - 1;
+    return elvesArr[maxIndex] + elvesArr[maxIndex - 1] + elvesArr[maxIndex - 2];
 }
 
 

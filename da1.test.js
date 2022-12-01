@@ -15,4 +15,4 @@ const input = `1000
 
 10000`
 
-test('test calories', () => {expect(cal(input)).toBe(24000)});
+test('test calories', () => {expect(cal(input)).toBe(45000)});
