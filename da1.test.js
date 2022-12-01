@@ -1,4 +1,4 @@
-const cal = require('day1')
+const cal = require('./day1')
 
 const input = `1000
 2000
