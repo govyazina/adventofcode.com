@@ -7,6 +7,6 @@ jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
 PmmdzqPrVvPwwTWBwg
 wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
 ttgJtRGJQctTZtZT
-CrZsJsPPZsGzwwsLwLmpwMDw`
+CrZsJsPPZsGzwwsLwLmpwMDw`.trim();
 
 test('test', () => {expect(Rucksack(input)).toBe(157)});
