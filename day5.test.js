@@ -1,17 +1,16 @@
 const stacks = require('./day5');
 
-const startStacks =
-    [
-        [' '],
-        ['Z', 'N'],
-    ['M', 'C', 'D'],
-    ['P']
-    ];
-// const startStacks = `
-//     [D]
-// [N] [C]
-// [Z] [M] [P]
-//  1   2   3 `;
+// const startStacks =
+//     [
+//         [' '],
+//         ['Z', 'N'],
+//     ['M', 'C', 'D'],
+//     ['P']
+//     ];
+const startStacks = `    [D]
+[N] [C]
+[Z] [M] [P]
+ 1   2   3 `;
 const input = `
 move 1 from 2 to 1
 move 3 from 1 to 3
