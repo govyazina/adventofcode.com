@@ -6,13 +6,9 @@ function reorgRucksack(input) {
         const second = rucksacks.pop().split('');
         const third = rucksacks.pop().split('');
         const intersection = first.find(function (elem) {
-            return second.find(function (elem2) {
-                if (elem === elem2) {
-                    return third.find(function (elem3) {
-                        return elem3 === elem;
-                    })
-                }
-            })
+            let inSec = second.includes(elem2 => elem === elem2);
+            let inThird = third.includes(elem3 => elem3 === elem);
+            return inSec && inThird;
         })
         if (intersection.charCodeAt(0) > 96) {
                     sum += intersection.charCodeAt(0)-96;
