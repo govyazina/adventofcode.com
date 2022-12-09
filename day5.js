@@ -10,7 +10,7 @@ module.exports = (stacks, input) => {
     for (let i = 0; i < columns.length; i++) {
         for (let j = 0; j < countColumns; j++) {
             let columnElement = columns[i][j];
-            if (columnElement){
+            if (columnElement) {
                 let letter = columnElement[1].trim();
                 if (letter) {
                     stacks[j].push(letter);
@@ -20,12 +20,12 @@ module.exports = (stacks, input) => {
     }
     stacks.unshift([' ']);
     for (const procedure of procedures) {
-        const boxes = Number(procedure[1]);
-        for (let i = 0; i < boxes; i++) {
-            let box = stacks[procedure[3]].pop();
-            stacks[procedure[5]].push(box);
-        }
+        const boxes = -Number(procedure[1]);
+        let box = stacks[procedure[3]].splice(boxes);
+        stacks[procedure[5]].push(...box);
+
     }
+    console.log(stacks)
     let string = '';
     for (const stack of stacks) {
         string += stack.pop();
