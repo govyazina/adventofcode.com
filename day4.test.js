@@ -8,4 +8,4 @@ const input = `
 6-6,4-6
 2-6,4-8`.trim();
 
-test('test', () => {expect(fullyContains(input)).toBe(2)});
+test('test', () => {expect(fullyContains(input)).toBe(4)});
